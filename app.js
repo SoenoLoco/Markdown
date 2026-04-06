@@ -3,6 +3,7 @@ import { parseMarkdown } from "./parser.js";
 
 let posts = []; // список статей из meta.json
 // Загружаем мета-данные статей при старте
+
 const cache = new Map(); //кэширование
 
 async function loadMeta() {
