@@ -52,7 +52,7 @@ async function renderPost(app, id) {
   const html = parseMarkdown(md);
   app.innerHTML = `
 <article class="post">
-<button onclick="navigate('#/')" class="back-btn">← Назад</button>
+<button onclick="location.hash='#/'" class="back-btn">← Назад</button>
 <time>${formatDate(post.date)}</time>
 ${html}
 </article>
